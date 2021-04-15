@@ -1,2 +1,0 @@
-# VisitChicago
-Visit Chicago Website
