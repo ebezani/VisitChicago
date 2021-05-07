@@ -151,16 +151,46 @@ border-radius: 20px;
 float:left; 
 
 } 
+.leftPic img{
+border: 4px solid rgb(0, 35, 102);
+border-radius: 20px;
+	
+}
 
 .Container {
-    padding-left: 200px; 
+    padding-left: 250px; 
 	padding-right:30px; 
+	
 	}
 
+.TransPageContainer {
+    padding-left: 250px; 
+	padding-right:30px; 
+	
+	}
+.TransPageContainer ul	
+	{
+	list-style-image: url('star.png');	
+	}
+.Container {
+    padding-left: 250px; 
+	padding-right:30px; 
+	
+	}
+	
+.Container p{
+	border-style: outset;	
+	border-radius: 5px;
+	height:auto;
+	margin-bottom: 10px; 
+	border-right:2px solid rgb(0, 35, 102);
+	border-bottom:2px solid rgb(0, 35, 102);
+	box-shadow: 10px 10px 5px grey;
+}
 
 .OuterContainer {
    
-    padding: 10px; 
+    padding: 5px; 
     margin-bottom: auto; 
 	}
 	
@@ -169,19 +199,81 @@ float:left;
 
 /* --------------------------------------------------------------------------------------- */
 
-/* Aside florting Styles */
 
-aside { float: right;
-        width: 275px;
-		background-color: #CCCCCC;
-		padding: 10px;
+aside { 
+        padding: 10px;
 		font-size: 80%;
-		box-shadow: 5px 5px 5px #333333;
 		position: relative;
-		top: -40px; 
-		border-radius:20px;
-		text-align:center; 
-		}
+		top: -5px; 
+		bottom:-5px;
+				}
+		
+aside dl {
+  display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: center; 
+}
+
+aside dt{
+   width: 70%;
+   text-align: center;
+   font-size:1.5em;
+}
+aside dd{
+line-height: 1em;	
+   width: 70%;
+   text-align: center;
+   font-size:1.2em;
+}
+
+aside dt {
+   border-bottom: 1px solid black;
+   font-weight: bold;
+   
+}
+
+.right {
+background-color: #d3dde8;
+float: right;
+width: 620px; 
+height:250px;
+border-right: 4px solid rgb(0, 0, 0);
+   
+}
+
+.left {
+   background-color: white;
+   
+   width: 370px;
+   height:250px;
+   border-left: 4px solid rgb(0, 0, 0); 
+  }
+
+aside h2 {
+   
+   font-family: Verdana, sans-serif, cursive;
+   font-size: 2em;
+   color: rgb(0, 35, 102);
+   margin-bottom: 15px;
+   text-align:center; 
+   
+}
+
+aside p {
+     font-size: 1.2em;
+   line-height: 1.4em;
+   margin: 10px auto;
+   border: 4px double rgb(0, 0, 0);
+   padding: 10px; 
+	}
+
+article img{
+border-left: 4px solid rgb(0, 0, 0); 
+border-right: 4px solid rgb(0, 0, 0);
+border-radius:20px; 	
+height:250px;
+}
 
 
 section {
@@ -230,13 +322,21 @@ dd {
 dl a {
 	color:rgb(0, 35, 102); 
 	}
-	
-
+.formresult	{
+margin: 40px; 
+margin-left:60px;
+margin-right:60px;
+border: 10px double rgb(0, 35, 102);
+padding:20px;
+}
+.formresult h2{
+	color:rgb(0, 35, 102);
+}
 /* --------------------------------------------------------------------------------------- */  
 /* Image Gallery  */		
 /* --------------------------------------------------------------------------------------- */				
 .gallery ul { list-style-type: none;
-               margin-left: 60px;  
+               margin-left: 35px;  
              			   }
 .gallery li { display:inline-block;
      width: 225px;
@@ -296,24 +396,21 @@ height:25px;
 /* Footer styles */   
 /* --------------------------------------------------------------------------------------- */
 footer {
-   color: gray; 
-   font-style: italic;   
-   background: linear-gradient(to bottom, rgb(0, 35, 102), black);   
-   -moz-column-width: 200px;
-   -webkit-column-width: 200px;
-    column-width: 200px;
-
-   -moz-column-gap: 25px;
-   -webkit-column-gap: 25px;
-    column-gap: 25px;
-    
+	color: gray; 
+   font-style: italic;  
+   font-size: 0.9em;
+    background: linear-gradient(to bottom, rgb(0, 35, 102), black); 
     padding: 20px 20px;
-	padding-left: 30px; 
+    padding-left: 30px;
 	border-right: 4px solid rgb(0, 0, 0);
     border-left: 4px solid rgb(0, 0, 0);
 	border-radius: 20px;
-	text-align: center; 
-  
+   -moz-column-gap: 10px;
+   -webkit-column-gap: 10px;
+    column-gap: 10px;
+	padding-left:15px;
+	font-weight: bold;
+
 }
 
 footer h1 {
@@ -325,18 +422,55 @@ footer h1 {
 
 footer h1:first-of-type {
    margin-top: 0px;
+   font-weight: bold;
+   
 }
 
 footer a {
-   display: block;
-   color: white;
-   font-size: 0.9em;
+   color: gray;
+   font-size: 1em;
+    font-style: italic; 
+	 font-weight: bold;
 }
 
 footer a:hover {
    text-decoration: underline;
    font-weight: bold;
 }
+footer p{
+ margin-bottom: 0px;
+text-align:center;  
+	
+}
+footer ul{
+	color: #FFFFFF; 
+	list-style-type: none;
+	margin:0px;
+
+              
+}
+
+footer li
+ {  
+	 color:#FFFFFF;
+	 text-align:center; 
+	
+  		 
+	}	
+.footcolumn {
+  float: left;
+ width: 25%;
+  
+
+}
+
+.footrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}	
+	
+
 /* --------------------------------------------------------------------------------------- */
 /* Form Layout Styles */
 /* --------------------------------------------------------------------------------------- */
@@ -348,9 +482,9 @@ form#survey {
 }
 
 fieldset {
-	background-color:#CCE5FF;
+	background-color:#d3dde8;
     width: 800px;
-    border: 2px ridge rgb(0, 35, 102));
+    border: 2px ridge rgb(0, 35, 102);
     padding: 10px;
     margin-bottom: 10px;
 	margin-left:40px; 
@@ -365,7 +499,8 @@ div.formRow {
    margin: 7px 0px;
 }
 
-div.formRow > * {
+div.formRow 
+ {
    -webkit-flex: 1 1 150px;
    flex: 1 1 150px;
 }
@@ -414,21 +549,21 @@ input[type='submit'], input[type='reset'] {
 /* Validation Styles */
 
 input:focus, select:focus, textarea:focus {
-   background-color: rgb(220, 255, 220);
+   background-color: rgb(215, 224, 215);
 }
 
 input#name:focus:valid,
 input#zip:focus:valid,
 input#phone:focus:valid,
 input#mail:focus:valid {
-   background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+   background: rgb(215, 224, 215) url(valid.png) bottom right/contain no-repeat;
 }
 
 input#name:focus:invalid,
 input#zip:focus:invalid,
 input#phone:focus:invalid,
 input#mail:focus:invalid {
-   background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+   background: rgb(237, 223, 224) url(invalid.png) bottom right/contain no-repeat;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -437,7 +572,7 @@ input#mail:focus:invalid {
 
 table { margin: auto;
         border: 5px solid rgb(0, 35, 102);
-        width: 820px;
+        width: 800px;
 		border-spacing: 0;
 		border-radius: 20px;
 		
@@ -447,6 +582,7 @@ td, th { padding: 0.5em;
          font-family: Arial, sans-serif;
 		 border: 1px solid black;
 		 margin: auto;
+		 text-align:center; 
  }
 
 
@@ -488,25 +624,37 @@ tr:first-of-type { background-color: rgb(0, 35, 102);
 /* --------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 640px) {
 
+    .ContentBox { min-width: 0;margin: 0; padding: 0; box-shadow: none; width:auto;}
+     
+	 .oneimage img{
+	width:400px;	 
+	 }
+	 iframe
+	 {
+		margin-left:30px;  
+	 }
+	 nav{
+	margin-bottom: 0;
+	height: 270px; 
+	padding-top: 0px; 
+	text-align:center;
+	
+}
+header nav ul li a:hover {
+   color: rgb(0, 0, 0);
+   background-color: #FFFFFF;
+   border-radius: 10px;
+   width: 144px;
+   text-align: center; 
+}
+ nav ul {
+   color: white;
+   display: block;
+   width: 100%;
+  
+}
    
-   a#navicon {
-      display: block;
-   }
-   
-   header nav ul {
-      display: none;
-   }
-   
-   header nav ul li {
-      font-size: 1em;
-      line-height: 1.3em;
-      height: 1.3em;
-   }
-   
-   a#navicon:hover+ul, header nav ul:hover {
-      display: block;
-   }
-   
+     
    section h1 {
       font-size: 1.5em;
    }
@@ -514,6 +662,13 @@ tr:first-of-type { background-color: rgb(0, 35, 102);
    section p {
       font-size: 0.9em;
    }
+   table{
+	   width: auto; 
+   }
+   form fieldset{
+	  width: auto;  
+   }
+ 
 }
 /* --------------------------------------------------------------------------------------- */
 /* =============================================

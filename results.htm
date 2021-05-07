@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Results Page</title>
+   <link href="visitchicago.css" rel="stylesheet" />
+    <script src="vc_formsubmit.js"></script>
+  
+</head>
+
+<body>
+<header>
+<link rel="icon" href="favicon.ico" type="image/x-icom">
+ <div class="figcontainer">
+	<img src="chicagoview.jpg" alt="Chicago City View" id="logoimg" height="300" width="1000"/>
+	<div class="figcaption">  Picture Source: Taken by Lilly B</div>
+	<div class="pagetitle">  CONTACT US</div>
+	<img src="logo.png" alt="Website Log" id="logoimg2"/>
+</div>
+    <nav> 
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="transportation.html">Transportation</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+         </ul>
+      </nav>
+</header>
+<main>
+	<div class="ContentBox">
+    <div class="formresult">
+  
+      <h2>
+         Thank you for submiting your form to the Visit Chicago!
+      </h2>
+   </header>
+   <article>
+      <p>I look forward to reading your message and responding to your request as soon as possible. Below you will find the detailed information you have provided to complete the form.</p>
+<p>If the form below is blank, please go back to the <a href="contactus.html">Contact Us</a> page and provide your detailed information as requested. 	  </p>
+      <div class="results">
+        
+         <script>
+             var formData = location.search;
+             formData = formData.substring(1, formData.length);
+             while (formData.indexOf("+") !== -1) {
+                formData = formData.replace("+", " ");
+             }
+             formData = decodeURIComponent(formData);
+             var formArray = formData.split("&");
+             for (var i = 0; i < formArray.length; i = i + 1) {
+                document.write("<p>" + formArray[i] + "</p>");
+             }
+         </script>
+		 </div>
+      </div>
+   </article>
+   </div>
+   <footer>
+     <div class="footrow">
+	
+	
+	<div class="footcolumn">
+		
+		<ul>
+		<li><h1>MY ACCOUNT</h1></li>
+			<li> <a href="#">Create an Account</a> </li>
+			<li> <a href="#">Sign In</a> </li>
+		</ul>
+	</div>
+	
+	<div class="footcolumn">
+		<ul>
+		 <li><h1>CUSTOMER SERVICE</h1></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="#">FAQs</a></li>
+		</ul>
+	</div>
+	<div class="footcolumn">
+	
+		<ul>
+		    <li><h1>ABOUT</h1></li>
+			<li> <a href="#">Fun Facts</a> </li>
+			<li> <a href="#">Blog</a>  </li> 
+		</ul>
+	</div>
+
+	<div class="footcolumn">
+		
+	  <ul>
+	        <li><h1>POLICIES</h1></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Terms of Use</a></li>
+	  </ul>
+	</div>
+</div>
+ 
+	  
+<p>Copyright &copy; 2021 Visit Chicago <a href="mailto:ebezani@student.ccc.edu">Lilly B</a></p>
+</footer>
+   
+</body>
+</html>
